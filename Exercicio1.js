@@ -239,6 +239,7 @@ console.log(produtos.indexOf("Mouse"));
  */
 
 //Atv 24
+/* 
 const nomes = [
   "Ana",
   "Bruno",
@@ -257,3 +258,378 @@ if (nomes.includes("João")) {
 } else {
   console.log("Aluno não encontrado!");
 }
+ */
+// Atividade 25
+/* 
+const alunos = [
+  "Ana",
+  "Bruno",
+  "Carlos",
+  "Diana",
+  "Eduardo",
+  "Fernanda",
+  "Gabriel",
+  "Helena",
+  "Igor",
+  "Juliana",
+];
+
+alunos.splice(2, 1);
+
+console.log(alunos);
+ */
+
+//Atividade 26
+/* 
+const produtosMercado = [
+  "Arroz",
+  "Feijão",
+  "Macarrão",
+  "Óleo de soja",
+  "Açúcar",
+  "Café",
+  "Leite",
+  "Pão de forma",
+  "Manteiga",
+  "Ovos",
+  "Peito de frango",
+  "Carne moída",
+  "Tomate",
+  "Cebola",
+  "Batata",
+  "Papel higiênico",
+  "Sabão em pó",
+  "Detergente",
+];
+
+produtosMercado.splice(3, 1, "Novo produto");
+
+console.log(produtosMercado);
+ */
+//Atividade 27
+/* 
+const cursos = [
+  "Desenvolvimento Web",
+  "Design UI/UX",
+  "Marketing Digital",
+  "Data Science",
+  "Gestão de Projetos",
+  "Cibersegurança",
+  "Inglês",
+  "Finanças",
+];
+
+cursos.splice(2, 1);
+console.log(cursos);
+cursos.splice(3, 0);
+console.log(cursos);
+cursos.splice(0, 1, "Frances");
+console.log(cursos);
+ */
+//Atividade 28
+/* 
+const alunos = [
+  "Ana",
+  "Bruno",
+  "Carlos",
+  "Diana",
+  "Eduardo",
+  "Fernanda",
+  "Gabriel",
+  "Juliana",
+];
+
+for (let i = 0; i < alunos.length; i++) {
+  console.log(alunos);
+}
+ */
+//Atividade 29
+/* 
+const produtos = [
+  "Arroz",
+  "Feijão",
+  "Leite",
+  "Ovos",
+  "Pão",
+  "Café",
+  "Açúcar",
+  "Tomate",
+];
+
+for (let produto of produtos) {
+  console.log(produto);
+}
+ */
+//Atividade 30
+/* 
+const alunos = [
+  "Ana",
+  "Bruno",
+  "Carlos",
+  "Diana",
+  "Eduardo",
+  "Fernanda",
+  "Gabriel",
+  "Juliana",
+];
+
+alunos.forEach(function (aluno) {
+  console.log(aluno);
+});
+ */
+
+//Atividade 31
+/* 
+const notas = [7.5, 8.0, 6.5, 9.2];
+let soma = 0;
+
+for (let i = 0; i < notas.length; i++) {
+  soma += notas[i];
+}
+
+console.log("Soma das notas: " + soma);
+ */
+//Atividade 32
+/* 
+let notas = [7, 8, 9, 10];
+let soma = 0;
+
+for (let i = 0; i < notas.length; i++) {
+  soma += notas[i];
+}
+
+let media = soma / notas.length;
+
+console.log("Soma: " + soma);
+console.log("Média: " + media);
+ */
+//Atividade 33
+/* 
+let notas = [7, 9, 6, 10, 8];
+
+let soma = 0;
+let maior = notas[0];
+let menor = notas[0];
+
+for (let i = 0; i < notas.length; i++) {
+  soma += notas[i];
+
+  if (notas[i] > maior) {
+    maior = notas[i];
+  }
+
+  if (notas[i] < menor) {
+    menor = notas[i];
+  }
+}
+
+let media = soma / notas.length;
+
+console.log("Notas: " + notas);
+console.log("Maior nota: " + maior);
+console.log("Menor nota: " + menor);
+console.log("Média: " + media);
+ */
+
+//Atividade 34
+/* 
+let alunos = ["Ana", "João", "Maria", "Pedro"];
+
+let aluno = alunos.find((nome) => nome == "João");
+
+console.log("Aluno encontrado: " + aluno);
+ */
+
+//Atividade 35
+/* 
+let notas = [5, 6, 7, 8, 9];
+
+let nota = notas.find(nota => nota > 7);
+
+console.log("Nota encontrada: " + nota);
+ */
+
+//Atividade 36
+/* 
+let alunos = [
+  { nome: "Ana", nota: 8 },
+  { nome: "João", nota: 6 },
+  { nome: "Maria", nota: 9 },
+];
+
+let aluno = alunos.find((aluno) => aluno.nota > 7);
+console.log("Aluno: " + aluno.nome);
+ */
+
+//Atividade 37
+/* 
+let notas = [5, 7, 8, 6, 10];
+
+let aprovadas = notas.filter((nota) => nota >= 7);
+
+console.log(aprovadas);
+
+// Atividade 38
+
+let precos = [50, 120, 80, 200, 150];
+
+let caros = precos.filter((preco) => preco > 100);
+
+console.log(caros);
+
+//Atividade 39
+
+let alunos = [
+  { nome: "Ana", nota: 8 },
+  { nome: "João", nota: 6 },
+  { nome: "Maria", nota: 9 },
+  { nome: "Pedro", nota: 5 },
+];
+
+let aprovados = alunos.filter((aluno) => aluno.nota >= 7);
+
+console.log(aprovados);
+ */
+//Atividade 40
+/* 
+let numeros = [2, 4, 6, 8];
+
+let dobro = numeros.map(numero => numero * 2);
+
+console.log(dobro);
+ */
+/* 
+// Exercício 41
+
+let precos = [100, 200, 300, 400];
+
+let novosPrecos = precos.map((preco) => preco * 1.1);
+
+console.log(novosPrecos);
+
+// Exercício 42
+
+let alunos = [
+  { nome: "Ana", idade: 18 },
+  { nome: "João", idade: 17 },
+  { nome: "Maria", idade: 19 },
+];
+
+let nomes = alunos.map((aluno) => aluno.nome);
+
+console.log(nomes);
+
+// Exercício 43
+
+let alunos = ["Carlos", "Ana", "João", "Bruna"];
+
+alunos.sort();
+
+console.log(alunos);
+
+// Exercício 44
+
+let notas = [8, 3, 10, 6, 7];
+
+notas.sort((a, b) => a - b);
+
+console.log(notas);
+
+// Exercício 45
+
+let notas = [8, 3, 10, 6, 7];
+
+notas.sort((a, b) => b - a);
+
+console.log(notas);
+
+// Exercício 46
+
+let alunos = ["Ana", "João", "Maria"];
+
+let lista = alunos.join(", ");
+
+console.log(lista);
+
+// Exercício 47
+
+let tecnologias = ["HTML", "CSS", "JavaScript", "Node.js"];
+
+let lista = tecnologias.join(" - ");
+
+console.log(lista);
+
+// Exercício 48
+
+let projeto = ["Site SENAI", "HTML", "CSS", "JavaScript"];
+
+let mensagem = projeto.join(" | ");
+
+console.log(mensagem);
+
+// Exercício 49
+
+let alunos = ["Ana", "João", "Maria", "Pedro"];
+
+alunos.reverse();
+
+console.log(alunos);
+
+// Exercício 50
+
+let atividades = [
+  "Estudar HTML",
+  "Estudar CSS",
+  "Estudar JavaScript",
+  "Fazer exercício",
+];
+
+atividades.reverse();
+
+console.log(atividades);
+
+// Exercício 51
+
+let acessos = [
+  "08:00 - Lucas",
+  "08:10 - Ana",
+  "08:20 - João",
+  "08:30 - Maria",
+  "08:40 - Pedro",
+  "08:50 - Bruna",
+];
+
+acessos.reverse();
+
+console.log("Histórico do mais recente para o mais antigo:");
+
+for (let i = 0; i < acessos.length; i++) {
+  console.log(acessos[i]);
+}
+
+// Desafio Final
+
+let alunos = ["Ana", "João", "Maria", "Pedro"];
+
+alunos.push("Lucas");
+
+alunos.unshift("Giovanni");
+
+alunos.splice(2, 1);
+
+let aluno = alunos.find((nome) => nome == "João");
+
+console.log("Quantidade de alunos: " + alunos.length);
+
+console.log("Primeiro aluno: " + alunos[0]);
+
+console.log("Último aluno: " + alunos[alunos.length - 1]);
+
+console.log("Aluno pesquisado: " + aluno);
+
+console.log("Lista de alunos:");
+
+for (let i = 0; i < alunos.length; i++) {
+  console.log(alunos[i]);
+}
+ */
